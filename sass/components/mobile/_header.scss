@@ -1,0 +1,48 @@
+.navigation {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 60px;
+}
+
+.mobile-menu-button {
+  display: block;
+  border: none;
+  padding: 0;
+
+  background-color: transparent;
+}
+
+.mobile-menu-button__burger {
+  display: block;
+
+  .mobile-menu-button.is-open & {
+    display: none;
+  }
+}
+
+.mobile-menu-button__close {
+  display: none;
+
+  .mobile-menu-button.is-open & {
+    display: block;
+  }
+}
+
+.mobile-menu-content {
+  display: none;
+
+  &.is-open {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    display: block;
+
+    background-color: $backgroundMenuHeader;
+  }
+}
