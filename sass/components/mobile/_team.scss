@@ -72,6 +72,9 @@
 
   color: $colorIconTeam;
 
+  transition: color 250ms $transitionTimingFunction,
+    background-color 250ms $transitionTimingFunction;
+
   &:hover,
   &:focus {
     background-color: $hoverColor;

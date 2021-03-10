@@ -1,0 +1,125 @@
+.main-footer {
+  background-color: $backgroundColorFooter;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.footer-address-mobile {
+  margin-bottom: 60px;
+}
+
+.footer-address__text {
+  margin-bottom: 8px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $addressColorFooter;
+}
+
+.footer-address__item {
+  margin-bottom: 8px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.footer-address__contact {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: $contactsColorFooter;
+}
+
+.footer-join {
+  margin-bottom: 60px;
+}
+
+.footer-join__text {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $joinTextColorFooter;
+}
+
+.footer-join__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-join__item {
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer-join__link {
+  display: inline-flex;
+  padding: 12px;
+  border-radius: 50%;
+
+  background-color: $backgroundSocialLinkFooter;
+  color: $socialIconColorFooter;
+
+  transition: background-color 250ms $transitionTimingFunction;
+
+  &:hover,
+  &:focus {
+    background-color: $hoverColor;
+  }
+}
+
+.footer-subscribe__container {
+  margin-bottom: 20px;
+}
+
+.footer-subscribe__label {
+  display: block;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $subscribeLabelColorFooter;
+}
+
+.footer-subscribe__input {
+  max-width: 450px;
+  width: 100%;
+  border: 1px solid $subscribeInputBorderColor;
+  border-radius: 4px;
+  padding: 15px 16px;
+
+  background-color: transparent;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: $subscribeInputTextColor;
+}
+
+.footer-subscribe__button {
+  padding: 10px 28px;
+  align-items: center;
+}
+
+.footer-subscribe__icon {
+  margin-left: 10px;
+}

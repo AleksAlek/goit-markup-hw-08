@@ -274,6 +274,8 @@ summary {
 /* Hero */
 /* Advantages */
 /* Team */
+/* Customers */
+/* Footer */
 /* Text color */
 /* Header border */
 /* Button */
@@ -367,7 +369,9 @@ svg {
 }
 
 .color-button {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   border: none;
   padding: 10px 32px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -616,10 +620,196 @@ svg {
   display: inline-flex;
   border-radius: 50%;
   color: #afb1b8;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team__icon-link:hover, .team__icon-link:focus {
   background-color: #2196f3;
   color: #ffffff;
+}
+
+.customers {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.customers__title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.179;
+  letter-spacing: 0.03em;
+}
+
+.customers__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: -30px;
+}
+
+.customers__item {
+  -ms-flex-preferred-size: calc((100% - 30px) / 2);
+      flex-basis: calc((100% - 30px) / 2);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.customers__item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.customers__link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  outline: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #afb1b8;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.customers__link:hover, .customers__link:focus {
+  color: #2196f3;
+  border-color: #2196f3;
+}
+
+.main-footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.footer-address-mobile {
+  margin-bottom: 60px;
+}
+
+.footer-address__text {
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.footer-address__item {
+  margin-bottom: 8px;
+}
+
+.footer-address__item:last-child {
+  margin-bottom: 0;
+}
+
+.footer-address__contact {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-join {
+  margin-bottom: 60px;
+}
+
+.footer-join__text {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-join__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-join__item {
+  margin-right: 10px;
+}
+
+.footer-join__item:last-child {
+  margin-right: 0;
+}
+
+.footer-join__link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-join__link:hover, .footer-join__link:focus {
+  background-color: #2196f3;
+}
+
+.footer-subscribe__container {
+  margin-bottom: 20px;
+}
+
+.footer-subscribe__label {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-subscribe__input {
+  max-width: 450px;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding: 15px 16px;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-subscribe__button {
+  padding: 10px 28px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-subscribe__icon {
+  margin-left: 10px;
 }
 /*# sourceMappingURL=main.css.map */
