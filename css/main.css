@@ -269,8 +269,11 @@ summary {
   display: list-item;
 }
 
-/* Mobile */
-/* General text color */
+/* Mobile menu */
+/* Common */
+/* Hero */
+/* Advantages */
+/* Team */
 /* Text color */
 /* Header border */
 /* Button */
@@ -323,6 +326,11 @@ ul {
   margin: 0;
 }
 
+svg {
+  display: inline-block;
+  fill: currentColor;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -345,6 +353,16 @@ ul {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+  }
+}
+
+.projects {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .projects {
+    display: block;
   }
 }
 
@@ -479,6 +497,129 @@ ul {
   line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  color: #ffffff;
+}
+
+.advantages {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.advantages__item {
+  margin-bottom: 30px;
+}
+
+.advantages__item:last-child {
+  margin-bottom: 0;
+}
+
+.advantages__icon-container {
+  margin-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+}
+
+.advantages__title {
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.advantages__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.team {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f5f4fa;
+}
+
+.team__title {
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.179;
+}
+
+.team__person-list {
+  text-align: center;
+}
+
+.person-card {
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
+}
+
+.person-card:last-child {
+  margin-bottom: 0;
+}
+
+.person-card__description {
+  padding: 30px 10px 24px 10px;
+}
+
+.person-card__title {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.188;
+  letter-spacing: 0.03em;
+}
+
+.person-card__position {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.188;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.team__icons-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.team__icons-item {
+  margin-right: 10px;
+}
+
+.team__icons-item:last-child {
+  margin-right: 0;
+}
+
+.team__icon-link {
+  padding: 12px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-radius: 50%;
+  color: #afb1b8;
+}
+
+.team__icon-link:hover, .team__icon-link:focus {
+  background-color: #2196f3;
   color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */

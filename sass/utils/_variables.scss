@@ -1,20 +1,30 @@
-/* Mobile */
+/* Mobile menu */
 $backgroundMenuHeader: #ffffff;
 
-
-/* General text color */
-$heroTitleColor: #ffffff;
-
-
-
-
-/* Text color */
+/* Common */
+$mainTextColor: #212121;
+$secondaryTextColor: #757575;
 $logoBasic: #000000;
 $logoWeb: #2196f3;
-$secondaryTextColor: #757575;
 $hoverColor: #2196f3;
+
+/* Hero */
+$heroTitleColor: #ffffff;
+
+/* Advantages */
+$backgroundIcon: #f5f4fa;
+
+/* Team */
+$teamBackground: #f5f4fa;
+$personCardBackground: #ffffff;
+$personCardShadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+$colorIconTeam: #afb1b8;
+$hoverIconTeam: #ffffff;
+
+/* Text color */
+
 $logoStudioFooter: #ffffff;
-$mainTextColor: #212121;
 $officeAddressColor: #ffffff;
 $contactsFooterColor: rgba(255, 255, 255, 0.6);
 
@@ -33,16 +43,12 @@ $backgroundButtonHover: #2196f3;
 $heroColor: #2f303a;
 
 /* Advantages card */
-$backgroundIcon: #f5f4fa;
 
 /* Work list */
 $workListColor: #ffffff;
 $workListBackground: rgba(47, 48, 58, 0.8);
 
 /* Our team */
-$backgroundTeam: #f5f4fa;
-$colorIcon: #afb1b8;
-$hoverIcon: #ffffff;
 
 /* Regular customers */
 $borderColor: #afb1b8;
