@@ -18,6 +18,11 @@
 .mobile-menu-button__burger {
   display: block;
 
+  .mobile-menu-button:hover &,
+  .mobile-menu-button:focus & {
+    fill: $hoverColor;
+  }
+
   .mobile-menu-button.is-open & {
     display: none;
   }
@@ -25,6 +30,11 @@
 
 .mobile-menu-button__close {
   display: none;
+
+  .mobile-menu-button:hover &,
+  .mobile-menu-button:focus & {
+    fill: $hoverColor;
+  }
 
   .mobile-menu-button.is-open & {
     display: block;

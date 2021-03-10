@@ -455,12 +455,22 @@ svg {
   display: block;
 }
 
+.mobile-menu-button:hover .mobile-menu-button__burger,
+.mobile-menu-button:focus .mobile-menu-button__burger {
+  fill: #2196f3;
+}
+
 .mobile-menu-button.is-open .mobile-menu-button__burger {
   display: none;
 }
 
 .mobile-menu-button__close {
   display: none;
+}
+
+.mobile-menu-button:hover .mobile-menu-button__close,
+.mobile-menu-button:focus .mobile-menu-button__close {
+  fill: #2196f3;
 }
 
 .mobile-menu-button.is-open .mobile-menu-button__close {
