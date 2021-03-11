@@ -31,10 +31,6 @@
                 class="mobile-menu-button__burger"
                 href="./images/symbol-defs.svg#icon-mobile-menu"
               ></use>
-              <use
-                href="./images/symbol-defs.svg#icon-mobile-menu-close"
-                class="mobile-menu-button__close"
-              ></use>
             </svg>
           </button>
 
@@ -42,8 +38,102 @@
             <button
               type="button"
               class="mobile-menu-button mobile-menu-content-button"
-            ></button>
+              data-menu-button-close
+            >
+              <svg
+                width="40"
+                height="40"
+                class="mobile-menu-content-button__close-icon"
+              >
+                <use
+                  href="./images/symbol-defs.svg#icon-mobile-menu-close"
+                ></use>
+              </svg>
+            </button>
 
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a
+                  href="./index.html"
+                  class="navigation__link navigation__link--active"
+                  >Студия</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a href="portfolio.html" class="navigation__link">Портфолио</a>
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation__link">Контакты</a>
+              </li>
+            </ul>
+
+            <address class="header-address">
+              <ul class="header-address__list">
+                <li class="header-address__item">
+                  <a href="tel:+380961111111" class="header-address__contact">
+                    +38 096 111 11 11</a
+                  >
+                </li>
+                <li class="header-address__item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="header-address__contact"
+                  >
+                    info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+
+              <ul class="header-address__social-list">
+                <li class="header-address__social-item">
+                  <a
+                    href=""
+                    class="header-address__social-link header-address__social-link--no-padding"
+                    >Instagram</a
+                  >
+                  <svg
+                    width="1"
+                    height="22"
+                    class="header-address__vertical-icon"
+                  >
+                    <use
+                      href="./images/symbol-defs.svg#icon-vertical-line"
+                    ></use>
+                  </svg>
+                </li>
+                <li class="header-address__social-item">
+                  <a href="" class="header-address__social-link">Twitter</a>
+                  <svg
+                    width="1"
+                    height="22"
+                    class="header-address__vertical-icon"
+                  >
+                    <use
+                      href="./images/symbol-defs.svg#icon-vertical-line"
+                    ></use>
+                  </svg>
+                </li>
+                <li class="header-address__social-item">
+                  <a href="" class="header-address__social-link">Facebook</a>
+                  <svg
+                    width="1"
+                    height="22"
+                    class="header-address__vertical-icon"
+                  >
+                    <use
+                      href="./images/symbol-defs.svg#icon-vertical-line"
+                    ></use>
+                  </svg>
+                </li>
+                <li class="header-address__social-item">
+                  <a href="" class="header-address__social-link">LinkedIn</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <!-- Разметка для планшета и ПК -->
+          <!-- <div class="tablet-desktop-navigation">
             <ul class="navigation__list">
               <li class="navigation__item">
                 <a
@@ -87,7 +177,7 @@
                 </li>
               </ul>
             </address>
-          </div>
+          </div> -->
         </nav>
       </div>
     </header>
@@ -649,6 +739,7 @@
     </div>
 
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/mobile-menu-closing.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
