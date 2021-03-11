@@ -1,13 +1,13 @@
-/* Mobile menu */
-$backgroundMenuHeader: #ffffff;
-$verticalIconMenuHeader: rgba(33, 33, 33, 0.2);
-
 /* Common */
 $mainTextColor: #212121;
 $secondaryTextColor: #757575;
 $logoBasic: #000000;
 $logoWeb: #2196f3;
 $hoverColor: #2196f3;
+
+/* Mobile menu */
+$backgroundMenuHeader: #ffffff;
+$verticalIconMenuHeader: rgba(33, 33, 33, 0.2);
 
 /* Hero */
 $heroTitleColor: #ffffff;
@@ -36,6 +36,14 @@ $socialIconColorFooter: #ffffff;
 $subscribeLabelColorFooter: #ffffff;
 $subscribeInputBorderColor: rgba(255, 255, 255, 0.3);
 $subscribeInputTextColor: rgba(255, 255, 255, 0.6);
+
+/* Modal */
+$backdropBackground: rgba(0, 0, 0, 0.2);
+$modalBackground: #ffffff;
+$inputBorderColorModal: rgba(33, 33, 33, 0.2);
+$textareaTextColor: rgba(117, 117, 117, 0.5);
+$policyCheckBorderColor: #212121;
+$closeBorderColor: rgba(0, 0, 0, 0.1);
 
 /* Text color */
 
@@ -78,11 +86,6 @@ $portfolioTextBackground: rgba(33, 150, 243, 0.9);
 /* Footer block */
 
 /* Modal */
-$backdropBackground: rgba(0, 0, 0, 0.2);
-$modalBackground: #ffffff;
-$closeBorderColor: rgba(0, 0, 0, 0.1);
-$inputBorderColor: rgba(33, 33, 33, 0.2);
-$textareaTextColor: rgba(117, 117, 117, 0.5);
 
 /* Card set gap */
 $cardSetGap: 30px;

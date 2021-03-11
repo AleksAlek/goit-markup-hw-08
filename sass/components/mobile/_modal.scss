@@ -1,0 +1,186 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  opacity: 1;
+  background-color: $backdropBackground;
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+}
+
+.modal {
+  position: relative;
+
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  width: 100%;
+
+  background-color: $modalBackground;
+}
+
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+  border: 1px solid $closeBorderColor;
+  border-radius: 50%;
+  padding: 6px;
+
+  background-color: transparent;
+
+  transition: color 250ms $transitionTimingFunction;
+
+  &:hover,
+  &:focus {
+    color: $hoverColor;
+  }
+}
+
+.modal__title {
+  margin-bottom: 12px;
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+
+.modal__label {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  margin-bottom: 10px;
+
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+
+  color: $secondaryTextColor;
+
+  transition: color 250ms $transitionTimingFunction;
+
+  &:hover {
+    color: $hoverColor;
+  }
+}
+
+.modal__input-container {
+  position: relative;
+
+  margin-top: 4px;
+}
+
+.modal__input {
+  padding: 11px 12px 11px 42px;
+  border: 1px solid $inputBorderColorModal;
+  border-radius: 4px;
+  width: 100%;
+
+  outline: none;
+
+  font-size: 14px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+
+  transition: border-color 250ms $transitionTimingFunction;
+
+  &:hover,
+  &:focus {
+    border-color: $hoverColor;
+  }
+
+  &:placeholder-shown {
+    font-size: 14px;
+    line-height: 1.167;
+    letter-spacing: 0.01em;
+
+    color: $textareaTextColor;
+  }
+}
+
+.modal__icon {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+
+  fill: $mainTextColor;
+
+  transition: fill 250ms $transitionTimingFunction;
+
+  .modal__input:hover + &,
+  .modal__input:focus + & {
+    fill: $hoverColor;
+  }
+}
+
+.modal__label--indented {
+  margin-bottom: 20px;
+}
+
+.modal__input--textarea {
+  width: 370px;
+  height: 120px;
+  margin-top: 4px;
+  padding: 12px 16px;
+  resize: none;
+}
+
+.policy__label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 370px;
+  margin-bottom: 30px;
+
+  cursor: pointer;
+
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+}
+
+.policy__icon {
+  width: 16px;
+  height: 15px;
+  border: 2px solid $policyCheckBorderColor;
+  border-radius: 2px;
+  margin-right: 8px;
+
+  transition: border 250ms $transitionTimingFunction;
+
+  .policy__input:focus + & {
+    border: 2px solid $hoverColor;
+  }
+
+  .policy__input:checked + & {
+    border: none;
+
+    background-image: url('../images/icon-checked.svg');
+  }
+}
+
+.policy__link {
+  text-decoration-line: underline;
+  color: $hoverColor;
+}
+
+.modal__sending-container {
+  text-align: center;
+}
