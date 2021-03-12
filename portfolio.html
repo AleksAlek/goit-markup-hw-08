@@ -19,48 +19,166 @@
           <a href="./index.html" class="logo logo__header"
             ><span class="logo__web">Web</span>Studio</a
           >
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="./index.html" class="navigation__link">Студия</a>
-            </li>
-            <li class="navigation__item">
-              <a
-                href="portfolio.html"
-                class="navigation__link navigation__link--active"
-                >Портфолио</a
+
+          <button type="button" class="mobile-menu-button" data-menu-button>
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+              aria-expanded="false"
+            >
+              <use
+                class="mobile-menu-button__burger"
+                href="./images/symbol-defs.svg#icon-mobile-menu"
+              ></use>
+            </svg>
+          </button>
+
+          <div class="mobile-menu-content" data-menu>
+            <button
+              type="button"
+              class="mobile-menu-button mobile-menu-content-button"
+              data-menu-button-close
+            >
+              <svg
+                width="40"
+                height="40"
+                class="mobile-menu-content-button__close-icon"
               >
-            </li>
-            <li class="navigation__item">
-              <a href="" class="navigation__link">Контакты</a>
-            </li>
-          </ul>
+                <use
+                  href="./images/symbol-defs.svg#icon-mobile-menu-close"
+                ></use>
+              </svg>
+            </button>
+
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a
+                  href="./index.html"
+                  class="navigation__link navigation__link--active"
+                  >Студия</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a href="portfolio.html" class="navigation__link">Портфолио</a>
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation__link">Контакты</a>
+              </li>
+            </ul>
+
+            <address class="header-address">
+              <ul class="header-address__list">
+                <li class="header-address__item">
+                  <a href="tel:+380961111111" class="header-address__contact">
+                    +38 096 111 11 11</a
+                  >
+                </li>
+                <li class="header-address__item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="header-address__contact"
+                  >
+                    info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+
+              <ul class="header-address__social-list">
+                <li class="header-address__social-item">
+                  <a
+                    href=""
+                    class="header-address__social-link header-address__social-link--no-padding"
+                    >Instagram</a
+                  >
+                  <svg
+                    width="1"
+                    height="22"
+                    class="header-address__vertical-icon"
+                  >
+                    <use
+                      href="./images/symbol-defs.svg#icon-vertical-line"
+                    ></use>
+                  </svg>
+                </li>
+                <li class="header-address__social-item">
+                  <a href="" class="header-address__social-link">Twitter</a>
+                  <svg
+                    width="1"
+                    height="22"
+                    class="header-address__vertical-icon"
+                  >
+                    <use
+                      href="./images/symbol-defs.svg#icon-vertical-line"
+                    ></use>
+                  </svg>
+                </li>
+                <li class="header-address__social-item">
+                  <a href="" class="header-address__social-link">Facebook</a>
+                  <svg
+                    width="1"
+                    height="22"
+                    class="header-address__vertical-icon"
+                  >
+                    <use
+                      href="./images/symbol-defs.svg#icon-vertical-line"
+                    ></use>
+                  </svg>
+                </li>
+                <li class="header-address__social-item">
+                  <a href="" class="header-address__social-link">LinkedIn</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <!-- Разметка для планшета и ПК -->
+          <!-- <div class="tablet-desktop-navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a
+                  href="./index.html"
+                  class="navigation__link navigation__link--active"
+                  >Студия</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a href="portfolio.html" class="navigation__link">Портфолио</a>
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation__link">Контакты</a>
+              </li>
+            </ul>
+
+            <address class="header-address">
+              <ul class="header-address__list">
+                <li class="header-address__item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="header-address__contact"
+                  >
+                    <svg class="header-address__icon" width="16" height="12">
+                      <use href="./images/symbol-defs.svg#icon-mail"></use>
+                    </svg>
+
+                    info@devstudio.com</a
+                  >
+                </li>
+                <li class="header-address__item">
+                  <a href="tel:+380961111111" class="header-address__contact">
+                    <svg class="header-address__icon" width="10" height="16">
+                      <use
+                        href="./images/symbol-defs.svg#icon-smartphone"
+                      ></use>
+                    </svg>
+
+                    +38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div> -->
         </nav>
-
-        <address class="header-address">
-          <ul class="header-address__list">
-            <li class="header-address__item">
-              <a
-                href="mailto:info@devstudio.com"
-                class="header-address__contact"
-              >
-                <svg class="header-address__icon" width="16" height="12">
-                  <use href="./images/symbol-defs.svg#icon-mail"></use>
-                </svg>
-
-                info@devstudio.com</a
-              >
-            </li>
-            <li class="header-address__item">
-              <a href="tel:+380961111111" class="header-address__contact">
-                <svg class="header-address__icon" width="10" height="16">
-                  <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                </svg>
-
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
       </div>
     </header>
 
@@ -68,7 +186,7 @@
     <main>
       <!-- Наши работы -->
       <section class="portfolio">
-        <div class="container">
+        <div class="container portfolio__container">
           <h1 class="visually-hidden">Наши работы</h1>
           <ul class="filter__list">
             <li class="filter__item">
@@ -92,10 +210,10 @@
             </li>
           </ul>
 
-          <ul class="portfolio__card-list">
+          <ul class="portfolio__cards-list">
             <li class="portfolio__card">
               <div class="portfolio__thumb">
-                <img src="./images/tehno.jpg" alt="Технокряк" width="370" />
+                <img src="./images/tehno.jpg" alt="Технокряк" width="450" />
                 <p class="portfolio__text">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
@@ -114,7 +232,7 @@
                 <img
                   src="./images/new-orlean.jpg"
                   alt="Постер New Orlean vs Golden Star"
-                  width="370"
+                  width="450"
                 />
                 <p class="portfolio__text">
                   Технокряк это современная площадка распространения
@@ -136,7 +254,7 @@
                 <img
                   src="./images/seafood.jpg"
                   alt="Ресторан Seafood"
-                  width="370"
+                  width="450"
                 />
                 <p class="portfolio__text">
                   Технокряк это современная площадка распространения
@@ -153,7 +271,7 @@
 
             <li class="portfolio__card">
               <div class="portfolio__thumb">
-                <img src="./images/prime.jpg" alt="Проект Prime" width="370" />
+                <img src="./images/prime.jpg" alt="Проект Prime" width="450" />
                 <p class="portfolio__text">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
@@ -169,7 +287,7 @@
 
             <li class="portfolio__card">
               <div class="portfolio__thumb">
-                <img src="./images/boxes.jpg" alt="Проект Boxes" width="370" />
+                <img src="./images/boxes.jpg" alt="Проект Boxes" width="450" />
 
                 <p class="portfolio__text">
                   Технокряк это современная площадка распространения
@@ -189,7 +307,7 @@
                 <img
                   src="./images/inspiration.jpg"
                   alt="Inspiration has no Borders"
-                  width="370"
+                  width="450"
                 />
                 <p class="portfolio__text">
                   Технокряк это современная площадка распространения
@@ -211,7 +329,7 @@
                 <img
                   src="./images/limited-edition.jpg"
                   alt="Издание Limited Edition"
-                  width="370"
+                  width="450"
                 />
                 <p class="portfolio__text">
                   Технокряк это современная площадка распространения
@@ -228,7 +346,7 @@
 
             <li class="portfolio__card">
               <div class="portfolio__thumb">
-                <img src="./images/lab.jpg" alt="Проект LAB" width="370" />
+                <img src="./images/lab.jpg" alt="Проект LAB" width="450" />
                 <p class="portfolio__text">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
@@ -247,7 +365,7 @@
                 <img
                   src="./images/growing-business.jpg"
                   alt="Growing Business"
-                  width="370"
+                  width="450"
                 />
                 <p class="portfolio__text">
                   Технокряк это современная площадка распространения
@@ -274,7 +392,7 @@
             ><span class="logo__web">Web</span
             ><span class="logo__studio">Studio</span></a
           >
-          <address>
+          <address class="footer-address-mobile">
             <p class="footer-address__text">г. Киев, пр-т Леси Украинки, 26</p>
             <ul>
               <li class="footer-address__item">
@@ -354,5 +472,8 @@
         </form>
       </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/mobile-menu-closing.js"></script>
   </body>
 </html>
