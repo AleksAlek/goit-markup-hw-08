@@ -70,9 +70,9 @@
 
 .portfolio__description {
   padding: 20px 24px;
-}
+  height: 110px;
+  min-height: 100%;
 
-.portfolio__description {
   border: 1px solid $portfolioCardBorder;
   border-top: none;
 }

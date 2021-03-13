@@ -1816,9 +1816,8 @@ svg {
 
 .portfolio__description {
   padding: 20px 24px;
-}
-
-.portfolio__description {
+  height: 110px;
+  min-height: 100%;
   border: 1px solid #eeeeee;
   border-top: none;
 }
