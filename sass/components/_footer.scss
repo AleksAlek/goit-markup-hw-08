@@ -5,8 +5,37 @@
   text-align: center;
 }
 
-.footer-address-mobile {
+.main-footer__container {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.main-footer__tablet-wrapper {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    margin-bottom: 0;
+  }
+}
+
+.footer-address {
   margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 85px;
+  }
 }
 
 .footer-address__text {
@@ -38,6 +67,10 @@
 
 .footer-join {
   margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .footer-join__text {
@@ -82,8 +115,19 @@
   }
 }
 
+.footer-subscribe {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
 .footer-subscribe__container {
   margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 
 .footer-subscribe__label {
@@ -97,6 +141,10 @@
   text-transform: uppercase;
 
   color: $subscribeLabelColorFooter;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .footer-subscribe__input {
@@ -113,11 +161,21 @@
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: $subscribeInputTextColor;
+
+  @media screen and (min-width: 1200px) {
+    height: 50px;
+    width: 358px;
+    margin-right: 12px;
+  }
 }
 
 .footer-subscribe__button {
   padding: 10px 28px;
   align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+  }
 }
 
 .footer-subscribe__icon {

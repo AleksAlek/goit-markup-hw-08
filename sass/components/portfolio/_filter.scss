@@ -5,6 +5,15 @@
 
 .filter__list {
   margin-bottom: 25px;
+
+  @media screen and (min-width: 768px) {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 35px;
+  }
 }
 
 .filter__item {

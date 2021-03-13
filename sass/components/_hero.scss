@@ -19,6 +19,8 @@
 
   @media screen and (min-width: 768px) {
     width: 768px;
+    min-height: 360px;
+    height: 100%;
     background-image: $linearGradientHero, url('../images/hero-tablet-768.jpg');
 
     @media (min-device-pixel-ratio: 2),
@@ -28,8 +30,12 @@
     }
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     width: 1600px;
+    min-height: 600px;
+    height: 100%;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: $linearGradientHero,
       url('../images/hero-desktop-1600.jpg');
 
@@ -59,4 +65,11 @@
   text-transform: uppercase;
 
   color: $heroTitleColor;
+
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }

@@ -60,14 +60,6 @@ svg {
   }
 }
 
-.projects {
-  display: none;
-
-  @media screen and (min-width: 1200px) {
-    display: block;
-  }
-}
-
 .color-button {
   display: inline-flex;
   border: none;
