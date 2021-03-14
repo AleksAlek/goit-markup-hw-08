@@ -1,7 +1,7 @@
 .portfolio__cards-list {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
 
   @media screen and (min-width: 768px) {
@@ -70,8 +70,6 @@
 
 .portfolio__description {
   padding: 20px 24px;
-  height: 110px;
-  min-height: 100%;
 
   border: 1px solid $portfolioCardBorder;
   border-top: none;
