@@ -798,10 +798,6 @@ svg {
   margin-right: auto;
   padding-top: 118px;
   padding-bottom: 118px;
-  width: 480px;
-  max-width: 100%;
-  height: 400px;
-  max-height: 100%;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-mobile-480.jpg");
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-mobile-480.jpg");
   background-size: cover;
@@ -816,9 +812,6 @@ svg {
 
 @media screen and (min-width: 768px) {
   .hero {
-    width: 768px;
-    min-height: 360px;
-    height: 100%;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-tablet-768.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tablet-768.jpg");
   }
@@ -833,9 +826,7 @@ svg {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1600px;
-    min-height: 600px;
-    height: 100%;
+    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-desktop-1600.jpg");
@@ -882,6 +873,7 @@ svg {
 
 @media screen and (min-width: 1200px) {
   .advantages {
+    padding-top: 94px;
     padding-bottom: 0;
   }
 }
@@ -974,6 +966,13 @@ svg {
   margin-bottom: 50px;
 }
 
+@media screen and (min-width: 1200px) {
+  .projects__section-title {
+    font-size: 36px;
+    line-height: 1.167;
+  }
+}
+
 .projects__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1022,6 +1021,14 @@ svg {
   margin-bottom: 30px;
   font-size: 28px;
   line-height: 1.179;
+}
+
+@media screen and (min-width: 1200px) {
+  .team__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.167;
+  }
 }
 
 .team__person-list {
@@ -1148,6 +1155,14 @@ svg {
   letter-spacing: 0.03em;
 }
 
+@media screen and (min-width: 1200px) {
+  .customers__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.167;
+  }
+}
+
 .customers__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1252,6 +1267,7 @@ svg {
 
 @media screen and (min-width: 1200px) {
   .main-footer__tablet-wrapper {
+    text-align: left;
     margin-right: 93px;
     margin-bottom: 0;
   }
@@ -1675,6 +1691,13 @@ svg {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .portfolio__container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .filter__list {
   margin-bottom: 25px;
 }
@@ -1745,6 +1768,7 @@ svg {
   .portfolio__cards-list {
     margin-right: -15px;
     margin-left: -15px;
+    margin-bottom: -30px;
   }
 }
 
@@ -1821,11 +1845,17 @@ svg {
 }
 
 .portfolio__card-title {
+  height: 36px;
+  overflow: hidden;
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+}
+
+.portfolio__cards-list:hover .portfolio__card-title {
+  height: 100%;
 }
 
 .portfolio__project-type {

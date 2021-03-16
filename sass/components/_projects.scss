@@ -9,6 +9,11 @@
 
 .projects__section-title {
   margin-bottom: 50px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.167;
+  }
 }
 
 .projects__list {
